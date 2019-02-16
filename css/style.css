@@ -194,7 +194,7 @@ input::placeholder {
   margin: 0px;
   font-size: 17px;
   line-height: 20px;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 90px;
   color: #ffffff;
 }
@@ -255,7 +255,7 @@ input::placeholder {
   list-style: none;
 }
 .info__item {
-  width: 350px;
+  width: 290px;
   height: 59px;
   margin: 0 auto;
   margin-bottom: 25px;
@@ -283,6 +283,7 @@ input::placeholder {
     margin-bottom: 25px;
   }
   .info__item {
+    width: 350px
     margin: 0px;
     margin-bottom: 25px;
   }
@@ -427,9 +428,8 @@ input::placeholder {
   margin-bottom: 25px;
 }
 .about-us__img {
-  display: block;
-  margin: 0 auto;
   margin-bottom: 25px;
+}
 }
 .about-us__description p {
   margin: 0%;
