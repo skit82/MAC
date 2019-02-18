@@ -163,6 +163,11 @@ input::placeholder {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (min-width: 768px) {
+  .page-header__list {
+    display: block;
+  }
+}
 @media (min-width: 1080px) {
   .menu__mob {
     display: none;
