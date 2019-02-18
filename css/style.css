@@ -101,15 +101,21 @@ input::placeholder {
 .menu__mob {
   position: absolute;
   content: "";
-  width: 63px;
-  height: 63px;
-  top: 0px;
+  width: 48px;
+  height: 48px;
+  top: 7px;
   right: 0px;
   border: none;
   outline: none;
   background-color: #3eb5f1;
-  background-image: url(../img/hamburger.svg);
+  background-image: url(../img/hamburger-mob.svg);
   cursor: pointer;
+}
+.page-header__list {
+  display: none;
+}
+.page-header__list .page-header__item--tel {
+  display: block;
 }
 .menu__social-list {
   display: -webkit-flex;
@@ -282,12 +288,17 @@ input::placeholder {
     line-height: 64px;
   }
 }
+@media (min-width: 1024px) {
+    .promo__title {
+      padding-right: 430px;
+    }
+}
 @media (min-width: 1080px) {
   .promo__inner {
     padding: 0 110px;
   }
   .promo__title {
-    padding-right: 316px;
+    padding-right: 134px;
     padding-top: 94px;
     margin-bottom: 12px;
     font-size: 48px;
