@@ -210,14 +210,17 @@ input::placeholder {
   padding: 0 15px;
 }
 .promo-picture {
-  height: 534px;
+  height: 430px;
+  /*height: 534px;*/
+  background-color: rgb(49, 54, 73);
   /*background-image: url(../img/main-banner.jpg);*/
   /*background-size: cover;*/
-  box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+  /*box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;*/
 }
 .promo__title {
   padding: 0px;
-  padding-top: 110px;
+  padding-top: 50px;
+  /*padding-top: 110px;*/
   padding-right: 10px;
   margin: 0px;
   margin-bottom: 20px;
@@ -232,14 +235,16 @@ input::placeholder {
   font-size: 17px;
   line-height: 20px;
   font-weight: 600;
-  margin-bottom: 90px;
+  margin-bottom: 70px;
+  /*margin-bottom: 90px;*/
   color: #ffffff;
 }
 .promo__link {
   display: block;
   width: 284px;
   height: 50px;
-  margin-bottom: 130px;
+  margin-bottom: 110px;
+  /*margin-bottom: 130px;*/
   font-size: 13px;
   font-weight: 600;
   line-height: 43px;
