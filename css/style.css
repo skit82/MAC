@@ -41,6 +41,9 @@ body {
   margin: 0 auto;
   background-color: rgb(49, 54, 73);
 }
+.page-header__inner {
+  padding: 0 15px;
+}
 .page-header__list {
   display: -webkit-flex;
   display: -moz-flex;
@@ -80,17 +83,33 @@ input::placeholder {
   line-height: 30px;
 }
 .page-header__inner {
-  display: none;
+  display: block;
 }
+
 .menu {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 15px;
   background-color: #ffffff;
 }
 .menu__list {
+  display: none;
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+.menu__mob {
+  position: absolute;
+  content: "";
+  width: 63px;
+  height: 63px;
+  top: 0px;
+  right: 0px;
+  border: none;
+  outline: none;
+  background-color: #3eb5f1;
+  background-image: url(../img/hamburger.svg);
+  cursor: pointer;
 }
 .menu__social-list {
   display: -webkit-flex;
@@ -104,11 +123,13 @@ input::placeholder {
   list-style: none;
 }
 .menu__inner {
+  position: relative;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -116,7 +137,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 30px;
   font-weight: 600;
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
 }
 .menu__logo-img {
@@ -124,6 +145,7 @@ input::placeholder {
   margin: 9px 44px 9px 0px;
 }
 .menu__social {
+  display: none;
   width: 114px;
 }
 .menu__social-list {
@@ -136,6 +158,21 @@ input::placeholder {
   justify-content: space-between;
 }
 @media (min-width: 1080px) {
+  .menu__mob {
+    display: none;
+  }
+  .menu__social {
+    display: block;
+  }
+  .menu__inner {
+    flex-direction: row;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__links {
+    color: #fff;
+  }
   .page-header__inner {
     display: block;
     padding: 0 110px;
@@ -174,8 +211,8 @@ input::placeholder {
 }
 .promo-picture {
   height: 534px;
-  background-image: url(../img/main-banner.jpg);
-  background-size: cover;
+  /*background-image: url(../img/main-banner.jpg);*/
+  /*background-size: cover;*/
   box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
 }
 .promo__title {
