@@ -255,6 +255,33 @@ input::placeholder {
   border: 3px solid #d30011;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .promo-picture {
+    height: 534px;
+    background-image: url(../img/main-banner.jpg);
+    background-size: cover;
+    box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+  }
+  .promo__title {
+    padding-right: 185px;
+    padding-top: 94px;
+    margin-bottom: 12px;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .promo__name {
+    margin-bottom: 95px;
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: 600;
+  }
+  .promo__link {
+    width: 513px;
+    height: 70px;
+    font-size: 24px;
+    line-height: 64px;
+  }
+}
 @media (min-width: 1080px) {
   .promo__inner {
     padding: 0 110px;
