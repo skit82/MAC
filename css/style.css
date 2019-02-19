@@ -146,10 +146,6 @@ input::placeholder {
   color: #000000;
   text-decoration: none;
 }
-.menu__logo-img {
-  display: block;
-  margin: 9px 44px 9px 0px;
-}
 .menu__social {
   display: none;
   width: 114px;
@@ -164,8 +160,69 @@ input::placeholder {
   justify-content: space-between;
 }
 @media (min-width: 768px) {
+  .menu__mob {
+    display: none;
+  }
   .page-header__list {
     display: flex;
+  }
+  .menu__list {
+    display: block;
+  }
+  .menu__social {
+    display: block;
+  }
+  .menu__inner {
+    flex-direction: row;
+  }
+  .menu__links {
+    color: #ffffff;
+  }
+  .menu__links:hover {
+    color: #313649;
+  }
+  .menu__list {
+    width: 416px;
+    padding: 0px 15px; 
+    transform: skew(136deg);
+    background-color: #3eb5f1;
+    border-left: 5px solid #313649;
+    border-right: 5px solid #313649;
+  }
+  .menu__list span {
+    display: flex;
+    justify-content: space-between;
+    width: 370px;
+    margin-top: 15px;
+    transform: skew(224deg);
+  }
+  .menu__social-list {
+    margin-top: 19px;
+  }
+  .menu__logo-img {
+    display: block;
+    margin: 9px 60px 9px 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__list {
+    width: 590px;
+    padding: 0px 55px;
+    transform: skew(136deg);
+    background-color: #3eb5f1;
+    border-left: 5px solid #313649;
+    border-right: 5px solid #313649;
+  }
+  .menu__list span {
+    display: flex;
+    justify-content: space-between;
+    width: 466px;
+    margin-top: 19px;
+    transform: skew(224deg);
+  }
+  .menu__logo-img {
+    display: block;
+    margin: 9px 70px 9px 0px;
   }
 }
 @media (min-width: 1080px) {
@@ -211,6 +268,10 @@ input::placeholder {
   }
   .menu__social-list {
     margin-top: 19px;
+  }
+  .menu__logo-img {
+    display: block;
+    margin: 9px 44px 9px 0px;
   }
 }
 .promo {
@@ -769,7 +830,7 @@ input::placeholder {
   background-color: rgb(62, 181, 241);
   border-top: 5px solid #313649;
   border-bottom: 5px solid #313649;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 .page-footer__contact-inner {
   display: block;
@@ -820,4 +881,14 @@ input::placeholder {
     padding-top: 48px;
     padding-bottom: 49px;
   }
+}
+
+/*Страница о нас*/
+
+.presentation__title {
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
 }
