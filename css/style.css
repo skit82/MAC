@@ -165,7 +165,7 @@ input::placeholder {
 }
 @media (min-width: 768px) {
   .page-header__list {
-    display: block;
+    display: flex;
   }
 }
 @media (min-width: 1080px) {
@@ -614,6 +614,9 @@ input::placeholder {
   max-width: 1280px;
   margin: 0 auto;
 }
+.page-footer__wrapper {
+  padding: 0 15px;
+}
 .page-footer__title {
   margin: 0px;
   padding-top: 48px;
@@ -634,6 +637,7 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  width: 270px;
   text-decoration: none;
 }
 .page-footer__menu-list {
@@ -651,9 +655,9 @@ input::placeholder {
 }
 .page-footer__contact-list {
   padding: 0px;
-  padding-bottom: 13px;
   margin: 0px;
-  margin-left: 140px;
+  padding-bottom: 20px;
+  margin-left: 20px;
   list-style: none;
 }
 .page-footer__contact-link {
@@ -681,7 +685,7 @@ input::placeholder {
   display: block;
   width: 215px;
   height: 40px;
-  margin-left: 56px;
+  margin: 0 auto;
   margin-bottom: 22px;
   font-size: 16px;
   font-weight: 600;
@@ -701,6 +705,8 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  align-items: center;
+  margin: 0 auto;
   justify-content: space-between;
   width: 266px;
 }
@@ -750,10 +756,26 @@ input::placeholder {
 .page-footer__copyright p {
   padding: 0px;
   margin: 0px;
+  margin-left: 15px;
   margin-bottom: 10px;
   font-size: 11px;
   line-height: 16px;
   font-weight: 400;
+  text-align: justify;
+}
+.page-footer__contact {
+  /*max-width: 450px;*/
+  transform: skewY(-10deg);
+  background-color: rgb(62, 181, 241);
+  border-top: 5px solid #313649;
+  border-bottom: 5px solid #313649;
+  margin-bottom: 35px;
+}
+.page-footer__contact-inner {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transform: skewY(10deg);
 }
 @media (min-width: 1080px) {
   .page-footer__wrapper {
@@ -784,5 +806,18 @@ input::placeholder {
     padding-top: 48px;
     padding-bottom: 49px;
     transform: skew(220deg);
+  }
+  .page-footer__contact-list {
+    margin-left: 140px;
+    padding-bottom: 13px;
+  }
+  .page-footer__contact-btn {
+    margin: 0px;
+    margin-left: 56px;
+    margin-bottom: 22px;
+  }
+  .page-footer__contact-inner {
+    padding-top: 48px;
+    padding-bottom: 49px;
   }
 }
