@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('.menu__mob').on('click', function() {
+    $('.header-menu-mob__item--humburger').on('click', function() {
         $('.menu__list, .menu__social').slideToggle(100, function(){
           if($(this).css('display') === 'none'){
           $(this).removeAttr('style')
