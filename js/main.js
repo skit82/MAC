@@ -98,7 +98,7 @@ $(document).ready(function() {
     ]
   });
 
-  $('').slick({
+  $('.about-us__list').slick({
     dots: true,
     infinite: true,
     speed: 300,
