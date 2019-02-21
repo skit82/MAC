@@ -1082,7 +1082,6 @@ input::placeholder {
     width: 270px;
   }
 }
-}
 @media (min-width: 1080px) {
   .page-footer__social {
     align-items: center;
