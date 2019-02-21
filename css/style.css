@@ -1114,19 +1114,19 @@ body {
 }
 input::-webkit-input-placeholder {
   font-size: 12px;
-  line-height: 25px;
+  /*line-height: 25px;*/
 }
 input:-ms-input-placeholder {
   font-size: 12px;
-  line-height: 25px;
+  /*line-height: 25px;*/
 }
 input::-ms-input-placeholder {
   font-size: 12px;
-  line-height: 25px;
+  /*line-height: 25px;*/
 }
 input::placeholder {
   font-size: 12px;
-  line-height: 25px;
+  /*line-height: 25px;*/
 }
 .page-footer__copyright p {
   padding: 0px;
