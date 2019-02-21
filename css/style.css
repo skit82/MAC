@@ -811,7 +811,7 @@ body {
     margin-right: auto;
   }
   .work__wrapper--two {
-    margin-left: auto;
+    margin-left: 120px;
     margin-top: -55px;
   }
   .work__description p {
@@ -1156,6 +1156,10 @@ input::placeholder {
   -webkit-transform: skewY(10deg);
       -ms-transform: skewY(10deg);
           transform: skewY(10deg);
+}
+.pafe-footer__menu-img {
+  width: 64px;
+  height: 45px;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
