@@ -205,7 +205,7 @@
     text-align: center;
 
     opacity: .25;
-    border: 3px solid  #d30011;
+    border: 3px solid  #3eb5f1;
     border-radius: 100px;
 
     -webkit-font-smoothing: antialiased;
@@ -214,5 +214,5 @@
 .slick-dots li.slick-active button:before
 {
     opacity: 1;
-    background-color: #3eb5f1;
+    background-color: #d30011;
 }
