@@ -513,65 +513,25 @@ body {
   background-image: -webkit-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
 }
-.promo__link::after {
-  content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    background: rgba(255, 255, 255, .2);
-    opacity: 0;
-    -webkit-transform: scale(1, 1) translate(-50%);
-    -ms-transform: scale(1, 1) translate(-50%);
-    transform: scale(1, 1) translate(-50%);
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
+.promo__link {
+    -webkit-animation: pulses 3s infinite ease-in-out;
+    -o-animation: pulses 3s infinite ease-in-out;
+    -ms-animation: pulses 3s infinite ease-in-out; 
+    -moz-animation: pulses 3s infinite ease-in-out; 
+    animation: pulses 3s infinite ease-in-out;
 }
-.promo__link:after {
-  -webkit-animation: ripple 1.5s infinite;
-          animation: ripple 1.5s infinite;
+@-webkit-keyframes pulses {
+    0% { -webkit-transform: scale(0.9); opacity: 0.7; }
+    50% { -webkit-transform: scale(1); opacity: 1; }
+    100% { -webkit-transform: scale(0.9); opacity: 0.7; }
 }
-.promo__link:hover {
-  -webkit-box-shadow: 0px 0px 40px -5px #fff inset;
-          box-shadow: 0px 0px 40px -5px #fff inset;
-  border: 1px solid transparent;
+
+@keyframes pulses {
+    0% { transform: scale(0.9); opacity: 0.7; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.9); opacity: 0.7; }
 }
-@-webkit-keyframes ripple {
-  0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: scale(25, 25);
-            transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(40, 40);
-            transform: scale(40, 40);
-  }
-}
-@keyframes ripple {
-  0% {
-    -webkit-transform: scale(0, 0);
-            transform: scale(0, 0);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: scale(25, 25);
-            transform: scale(25, 25);
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(40, 40);
-            transform: scale(40, 40);
-  }
-}
+
 .promo__link:hover {
   border: 3px solid #1c31de;
   background-image: -webkit-linear-gradient( 90deg, rgb(22,45,181) 0%, rgb(11,114,213) 72%, rgb(0,182,244) 100%);
