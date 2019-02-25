@@ -494,11 +494,13 @@ body {
   /*margin-bottom: 90px;*/
   color: #ffffff;
 }
-.promo__link {
+.promo__link,
+.presentation__support__link {
   position: relative;
   overflow: hidden;
 }
-.promo__link {
+.promo__link,
+.presentation__support__link {
   display: block;
   width: 100%;
   height: 50px;
@@ -513,7 +515,8 @@ body {
   background-image: -webkit-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
 }
-.promo__link:before {
+.promo__link:before,
+.presentation__support__link:before {
     content: "";
     display: block;
     width: 100%;
@@ -528,7 +531,8 @@ body {
     transition: ease 0.3s;
 }
 
-.promo__link:after {
+.promo__link:after,
+.presentation__support__link:after {
     content: "";
     display: block;
     width: 15px;
@@ -560,12 +564,14 @@ body {
   30% { left: 110%; margin-left: 80px; }
   100% { left: 110%; margin-left: 80px; } }
 
-.promo__link:hover {
+.promo__link:hover,
+.presentation__support__link:hover {
   border: 3px solid #1c31de;
   background-image: -webkit-linear-gradient( 90deg, rgb(22,45,181) 0%, rgb(11,114,213) 72%, rgb(0,182,244) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(22,45,181) 0%, rgb(11,114,213) 72%, rgb(0,182,244) 100%);
 }
-.promo__link:active {
+.promo__link:active,
+.presentation__support__link:active {
   border: 3px solid #1c31de;
   -webkit-box-shadow: 0 2px 2px rgba(40, 67, 185, 0.2);
           box-shadow: 0 2px 2px rgba(40, 67, 185, 0.2);
@@ -593,7 +599,8 @@ body {
     line-height: 60px;
     font-weight: 600;
   }
-  .promo__link {
+  .promo__link,
+  .presentation__support__link {
     width: 513px;
     height: 70px;
     font-size: 24px;
@@ -1458,9 +1465,125 @@ input::placeholder {
   height: 287px;
   background-image: url(../img/company.jpg);
 }
+.presentation__work {
+  background-color: #313649; 
+}
+.presentation__work-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.presentation__work-text span {
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.presentation__work-text {
+  position: relative;
+  padding: 0px;
+  padding-left: 110px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  z-index: 1;
+}
+.presentation__work-text:before {
+  position: absolute;
+  content: "";
+  width: 133px;
+  height: 133px;
+  left: 27px;
+  top: -75px;
+  background-image: url(../img/present_work.jpg);
+  z-index: -1;
+}
+.presentation__work-number {
+  position: relative;
+  display: block;
+  font-size: 150px;
+  line-height: 125px;
+  color: #fff;
+  z-index: 2;
+}
+.presentation__work-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.presentation__work-item {
+  width: 516px;
+}
+.presentation__support {
+}
+.presentation__support-descr h2 {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 35px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #313649;
+}
+.presentation__support-descr p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #313649;
+}
+.presentation__support-descr p:last-child {
+  margin-bottom: 0px;
+}
+.presentation__support-descr {
+  margin-bottom: 40px;
+}
+.presentation__direction {
+  background-color: #3eb5f1;
+}
+.presentation__direction-inner {
+  padding: 70px 110px;
+
+}
+.presentation__direction-descr h2 {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 28px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.presentation__direction-descr p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+}
 @media (min-width: 1080px) {
-.presentation__name-inner {
+.presentation__name-inner,
+.presentation__work-inner {
+
   padding: 0 110px;
+}
+.presentation__support {
+  padding: 0 110px;
+  padding-top: 67px;
+  padding-bottom: 85px;
 }
 .presentation__title {
   position: relative;
