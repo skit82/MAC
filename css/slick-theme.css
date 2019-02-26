@@ -102,9 +102,12 @@
 .banner .slick-dotted.slick-slider {
   margin-bottom: 20px;
 }
-.slick-dotted.slick-slider
-{
+.slick-dotted.slick-slider {
     margin-bottom: 70px;
+}
+.slick-dotted.slick-slider.presentation__work-list
+{
+    margin-bottom: 0px;
 }
 .banner__list .slick-dots {
     position: absolute;
