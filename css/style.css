@@ -1,5 +1,3 @@
-
-   
 @font-fase {
   font-family: "ArialMT";
     src: url(../font/ArialMT.woff2) format("woff2"),
@@ -7,6 +5,7 @@
     font-weight: 400;
     font-style: normal; 
 }
+
 @font-face {
   font-family: "Arial-BoldMT";
     src: url(../font/Arial-BoldMT.woff2) format("woff2"),
@@ -1783,5 +1782,119 @@ input::placeholder {
     line-height: 24px;
     font-weight: 400;
     color: #313649;
+  }
+}
+
+/*Страница наши услуги*/
+.service {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.service__name {
+  height: 284px;
+  background-image: url(../img/service-main.jpg);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.service__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 407px;
+  padding-top: 127px;
+  padding-bottom: 130px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  }
+.service__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-service.png);
+}
+.service__descr {
+  padding-top: 76px;
+  background-color: rgb(62, 181, 241);
+}
+.service__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.service__descr-item {
+  width: 516px;
+  height: 379px;
+  margin-bottom: 35px;
+  background-image: url(../img/service-fon.png);
+  background-size: cover;
+}
+.service__info {
+  padding-top: 66px;
+  padding-bottom: 66px;
+  background-color: rgb(49, 54, 73);
+}
+.service__info-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.service__info-item {
+  max-width: 516px;
+}
+.service__info-text {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  text-indent: 10px;
+  color: #fff;
+}
+.servise__descr-text {
+  width: 321px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #313649;
+  padding-left: 35px;
+}
+.servise__descr-img {
+  display: block;
+  margin: 0 auto;
+  margin-left: 35px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+@media (min-width: 1080px) {
+  .servise__name-inner {
+    padding: 0 110px;
+  }
+  .servise__descr-wrapper {
+    padding: 0 110px;
+  }
+  .service__info-inner {
+    padding: 0 110px;
   }
 }
