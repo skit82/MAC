@@ -1898,3 +1898,171 @@ input::placeholder {
     padding: 0 110px;
   }
 }
+
+/*Страница патент*/
+
+.patent{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.patent__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.patent__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 280px;
+  padding-top: 101px;
+  padding-bottom: 101px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+  }
+.patent__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.patent__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.patent__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.patent__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.patent__descr-item,
+.patent__paper-item {
+  width: 516px;
+}
+.patent__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.patent__paper-img {
+  display: block;
+  box-shadow: 0px 0px 10px #000000;
+}
+.patent__descr-picture img {
+  display: block;
+  margin-left: 30px;
+  padding-top: 70px;
+  padding-bottom: 78px;
+}
+.patent__descr-name {
+  padding: 0px;
+  padding-top: 50px;
+  margin: 0px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.patent__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 80px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: justify;
+  letter-spacing: 0.050em;
+  color: #fff;
+}
+.patent__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.patent__paper-list {
+  padding: 0px;
+  padding-left: 30px;
+  margin: 0px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+.patent__paper-block {
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-weight: 400;
+}
+.patent__paper-block::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  left: -30px;
+  top: 8px;
+  background-color: #3eb5f1;
+  border-radius: 100px;
+}
+.patent__paper-text {
+  padding: 0px;
+  padding-left: 30px;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justify;
+  letter-spacing: 0.010em;
+  color: #fff;
+}
+.patent__paper-link {
+  display: block;
+  width: 214px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 38px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  line-height: 36px;
+  color: #ffffff;
+  border: 3px solid  #d30011;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
+}
+@media (min-width: 1080px) {
+  .patent__name-inner {
+    padding: 0 110px;
+  }
+  .patent__item-inner {
+    padding: 0 110px;
+  }
+}
