@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/slick-theme.css"/>
 	<title>Центр миграционной помощи Саратовской области</title>
 </head>
 <body>
@@ -11,12 +13,12 @@
 		<div class="page-header__inner">
 			<div class="page-header__top">
 				<ul class="page-header__list">
-					<li class="page-header__item page-header__item--tel">
+					<li class="page-header__item">
 						<a href="tel:+7(906)307-44-64" class="page-header__link">
 							<img src="img/icon-phone.png" width="18" height="18" alt="Телефон" class="page-header__img">+7(906)307-44-64
 						</a>	
 					</li>
-					<li class="page-header__item ">
+					<li class="page-header__item">
 						<a href="" class="page-header__link">
 							<img src="img/icon-address.png" width="16" height="21" alt="Адресс" class="page-header__img">г. Саратов, ул. Московская, д.56
 						</a>		
@@ -45,12 +47,27 @@
 			<nav class="menu">
 				<div class="menu__inner">
 					<div class="menu__logo">
-						<a href="index.html" class="menu__logo-link">
+						<a href="" class="menu__logo-link">
 							<img src="img/logo-header.png" width="64" height="45" alt="Логотип" class="menu__logo-img">
 						</a>
 					</div>
-					<button class="menu__mob">
-					</button>
+					<ul class="header-menu-mob">
+	          <li class="header-menu-mob__item header-menu-mob__item--open">
+	            <a class="header-menu-mob__link">
+	              <img src="img/logo-header.png" width="64" height="45" alt="Логотип">
+	            </a>
+	            <a href="tel:+7(906)307-44-64" class="header-menu-mob__link  header-menu-mob__link--tel">
+	            	<span>
+	              	<img src="img/phone_icon.png" width="48" height="48" alt="">
+	            	</span>
+	            </a>
+	            <a class="header-menu-mob__link header-menu-mob__item--humburger">
+	              <img src="img/hamburger-mob.svg" width="48" height="48" alt="Гамбургер" class="header-menu-mob__img">
+	            </a>
+						</li>
+					</ul>
+					<!-- <button class="menu__mob"> -->
+					<!-- </button> -->
 					<ul class="menu__list">
 						<span>
 							<li class="menu__item">
@@ -59,17 +76,17 @@
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__links">
+								<a href="about.html" class="menu__links">
 									 О нас 
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__links">
+								<a href="service.html" class="menu__links">
 									Услуги
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__links">
+								<a href="patent.html" class="menu__links">
 									Контакты
 								</a>
 							</li>
@@ -93,136 +110,83 @@
 								</a>
 							</li>
 						</ul>
+						<a class="header__sait" href="">Полная версия сайта</a>
 					</div>
 				</div>
 			</nav>
 	</header>
 	<main>
-		<section class="service">
-			<div class="service__name">
-				<div class="servise__name-inner">
-					<h1 class="service__title">
-						Наши услуги
+		<section class="notary">
+			<div class="notary__name">
+				<div class="notary__name-inner">
+					<h1 class="notary__title">
+						Нотариальный перевод документов 
 					</h1>
 				</div>
 			</div>
-			<div class="service__descr">
-				<div class="servise__descr-wrapper">
-					<ul class="service__descr-list">
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture">
-									<img src="img/advisory.jpg" width="356" height="264" alt="" class="servise__descr-img">
+			<div class="notary__list">
+				<div class="notary__item-header">
+					<div class="notary__item-inner">
+						<ul class="notary__descr-list">
+							<li class="notary__descr-item">
+								<div class="notary__descr-picture">
+									<img src="img/notary-img1.png" width="378" height="251" alt="Картинка">
 								</div>
-								<p class="servise__descr-text">
-									Юридическая консультация
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--patent">
-									<img src="img/patent1.jpg" width="331" height="231" alt="" class="servise__descr-img">
+							</li>
+							<li class="notary__descr-item">
+								<div class="notary__descr-text">
+									<h2 class="notary__descr-name">
+										Нотариальный перевод
+									</h2>
+									<p>
+										Сделать перевод документов на русский язык с нотариальным заверением.
+									</p>
+									<p>
+										<span class="">Стоимость услуги – от 1 100 рублей.</span> Стоимость перевода одного документа с двух языков - 1700 рублей.
+									</p>
+									<p>
+										Внимание: выполняем нотариальное заверение переводов в течение 24 часов, в случае срочного перевода в течение 1 рабочего дня. Стоимость услуги при этом возрастает и зависит от срочности получения итогово документа.
+									</p>
 								</div>
-								<p class="servise__descr-text">
-									Патент
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--residence">
-									<img src="img/residence.jpg" width="311" height="222" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Разрешение на временное проживание
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--permit">
-									<img src="img/permit.jpg" width="170" height="247" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Вид на жительство
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--national">
-									<img src="img/national.jpg" width="163" height="239" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Гражданство
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--program">
-									<img src="img/state-program.jpg" width="177" height="254" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Государственная программа
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--test">
-									<img src="img/testing.jpg" width="302" height="226" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Тестирование  иностранных граждан
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--insurance">
-									<img src="img/insurance.png" width="197" height="271" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Страхование  иностранных граждан (ДМС)
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<div class="servise__descr-box">
-								<div class="service__picture service__picture--notaria">
-									<img src="img/notaria.jpg" width="272" height="224" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Нотариальный  перевод документов
-								</p>
-							</div>
-						</li>
-						<li class="service__descr-item">
-							<!-- <div class="servise__descr-box"> -->
-								<div class="service__picture service__picture--service">
-									<img src="img/other-services.png" width="337" height="243" alt="" class="servise__descr-img">
-								</div>
-								<p class="servise__descr-text">
-									Прочие услуги
-								</p>
-							<!-- </div> -->
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="service__info">
-				<div class="service__info-inner">
-					<div class="service__info-item">
-						<p class="service__info-text">
-							Центр миграционной помощи долгое время оказывает миграционные услуги на территории Саратовской области иностранным гражданам и юридическим лицам. У нас Вы получите квалифицированную помощь по вопросам правил въезда, пребывания и трудовой деятельности иностранных граждан. Наша задача предоставить подходящие именно для Вашей ситуации грамотные консультации и отработанные на практике решения, соответствующие действующему законодательству. Мы привыкли быть в курсе изменений миграционной политики, работать на опережение, предупреждая Ваши проблемы на этапе их возникновения. Наша компания окажет консультативные услуги по вопросам в сфере миграции на безвозмездной основе как для иностранных граждан, так и для граждан Российской Федерации. 
-						</p>  
+							</li>
+						</ul>
 					</div>
-					<div class="service__info-item">
-						<p class="service__info-text">
-							Как правило, иностранные граждане, прибывшие в Российскую Федерацию не разбираются в законодательстве, являются юридически не грамотными и порой даже не знают куда обратиться, с чего начать первые шаги для оформления документов, позволяющих легально пребывать и осуществлять трудовую деятельность в РФ. В связи с этим, не осознавая того, могут перейти на нелегальное положение, став прямыми нарушителями закона. Наша организация всегда готова пойти на встречу в этих вопросах, оказать грамотную консультацию, подсказать с чего начать, куда обратиться, оказать практическую помощь в подготовке документов, не в качестве посредника, а именно непосредственно при личном участии.
-						</p>
+				</div>
+				<div class="notary__item-footer">
+					<div class="notary__item-inner">
+						<div class="notary__description">
+							<div class="notary__paper-item">
+								<ul class="patent__paper-list">
+									<li class="patent__paper-block">
+										подготовка исчерпывающего перечня документов,
+									</li>
+									<li class="patent__paper-block">
+										обеспечение фактического сопровождения при подаче документов,
+									</li>
+									<li class="patent__paper-block">
+										контроль сроков готовности,
+									</li>
+									<li class="patent__paper-block">
+										обеспечение фактического сопровождения при получении иностранным гражданином патента,
+									</li>
+									<li class="patent__paper-block">
+										включая оплату НДФЛ за первый месяц
+									</li>
+								</ul>
+									<p class="patent__paper-text">
+										Все поездки осуществляются с использованием транспорта предоставляемого нашей компанией.
+									</p>
+									<p class="patent__paper-text">
+										Для понимания действий иностранного гражданина при подготовке документов и получении патента, а также действий при приёме его на работу организацией – работодателем, мы подготовили для Вас наглядную и поэтапную схему:
+									</p>
+									<a href="" class="patent__paper-link">Скачать</a>
+							</div>
+							<div class="patent__paper-item">
+									<div class="patent__paper-picture">
+										<img src="img/patent-footer.jpg" width="516" height="350" alt="" class="patent__paper-img">
+									</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -334,6 +298,7 @@
 		</div>
 	</footer>
 	<script  src="jquery/jquery-3.0.0.min.js"></script>
-  <script src="js/main.js"></script>
+	<script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>	
 </body>
 </html>
