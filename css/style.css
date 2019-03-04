@@ -1908,6 +1908,7 @@ input::placeholder {
   list-style: none;
 }
 .service__descr-item {
+  position: relative;
   width: 516px;
   height: 379px;
   margin-bottom: 35px;
@@ -2003,6 +2004,73 @@ input::placeholder {
 .service__picture--service {
   padding-top: 51px;
   margin-left: 50px;
+}
+.service__pop-up {
+  opacity: 0;
+  position: absolute;
+  width: 516px;
+  height: 379px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: 0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+  box-shadow: 0 0 0 270px rgba(53, 59, 84, 0.5) inset;
+}
+.service__pop-up-inner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 100%;
+  margin: 0 auto;
+}
+.service__pop-up-title {
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 0px;
+  padding-top: 63px;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+.service__pop-up-text {
+  padding: 0px;
+  padding-bottom: 5px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+.service__pop-up:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.service__pop-up-link {
+  width: 214px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 58px;
+  font-size: 16px;
+  line-height: 39px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  border: 3px solid #a20605;
+  border-radius: 10px;
+  background-image: -moz-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
 }
 @media (min-width: 768px) {
   .service__title {
@@ -2296,6 +2364,407 @@ input::placeholder {
     padding: 0 110px;
   }
   .notary__item-inner {
+    padding: 0 110px;
+  }
+}
+
+/*Юридическа консультация*/
+
+.advisory {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.advisory__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.advisory__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 40px;
+  padding-top: 97px;
+  padding-bottom: 106px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+.advisory__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.advisory__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.advisory__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.advisory__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.advisory__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.advisory__descr-item,
+.advisory__law-item {
+  width: 516px;
+}
+.advisory__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.advisory__descr-picture img {
+  display: block;
+  margin-left: 15px;
+  padding-top: 50px;
+  padding-bottom: 58px;
+}
+.advisory__descr-name {
+  padding: 0px;
+  padding-top: 29px;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.advisory__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.advisory__descr-up {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+.advisory__law-text {
+  padding: 0px;
+  padding-top: 32px;
+  margin: 0px;
+  margin-bottom: 45px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  font-weight: bold;
+  color: #fff;
+}
+.advisory__law-img {
+  display: block;
+  box-shadow: 0px 0px 10px #000000;
+}
+@media (min-width: 1080px) {
+  .advisory__name-inner {
+    padding: 0 110px;
+  }
+  .advisory__item-inner {
+    padding: 0 110px;
+  }
+}
+
+/*Страница временое проживание*/
+
+.residence {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.residence__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.residence__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 0px;
+  padding-top: 60px;
+  padding-bottom: 79px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #fff;
+}
+.residence__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.residence__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.residence__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.residence__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.residence__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.residence__descr-item,
+.residence__allow-item {
+  width: 516px;
+}
+.residence__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.residence__descr-picture img {
+  display: block;
+  margin-left: 25px;
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+.residence__descr-name {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.residence__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.residence__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.residence__allow-text {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 28px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  color: #fff;
+}
+.residence__allow-img {
+  display: block;
+  box-shadow: 0px 0px 10px #000000;
+}
+@media (min-width: 1080px) {
+  .residence__name-inner {
+    padding: 0 110px;
+  }
+  .residence__item-inner {
+    padding: 0 110px;
+  }
+}
+
+/*Вид на жительство*/
+
+.permit {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.permit__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.permit__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 10px;
+  padding-top: 75px;
+  padding-bottom: 87px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+.permit__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.permit__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.permit__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.permit__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.permit__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.permit__descr-item,
+.permit__issues-item {
+  width: 516px;
+}
+.permit__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.permit__descr-picture img {
+  display: block;
+  margin-left: 25px;
+  padding-top: 68px;
+  padding-bottom: 70px;
+}
+.permit__descr-name {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.permit__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.permit__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.permit__issues-text {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  word-spacing: -1px;
+  text-align: justify;
+  color: #fff;
+}
+.permit__issues-text span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+.permit__issues-img {
+  display: block;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (min-width: 1080px) {
+  .permit__name-inner {
+    padding: 0 110px;
+  }
+  .permit__item-inner {
     padding: 0 110px;
   }
 }
