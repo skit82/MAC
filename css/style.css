@@ -2326,7 +2326,7 @@ input::placeholder {
   list-style: none;
 }
 .notary__descr-item,
-.notary__paper-item {
+.notary__transfer-item {
   width: 516px;
 }
 .notary__descr-picture {
@@ -2344,6 +2344,7 @@ input::placeholder {
 .notary__descr-name {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 22px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 600;
@@ -2352,12 +2353,51 @@ input::placeholder {
 .notary__descr-text p {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.050em;
   text-align: justify;
   font-weight: 600;
   color: #fff;
+}
+.notary__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+}
+.notary__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.notary__descr-tp {
+  text-transform: uppercase;
+}
+.notary__descr-cup {
+  text-transform: uppercase;
+  font-style: italic;
+}
+.notary__transfer-text {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: justify;
+}
+.notary__transfer-text:last-child {
+  margin-bottom: 0px;
+}
+.notary__transfer-img {
+  display: block;
+  box-shadow: 0px 0px 10px #000000;
 }
 @media (min-width: 1080px) {
   .notary__name-inner {
@@ -2765,6 +2805,271 @@ input::placeholder {
     padding: 0 110px;
   }
   .permit__item-inner {
+    padding: 0 110px;
+  }
+}
+
+/*Страница Гражданство*/
+
+.national {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.national__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.national__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 10px;
+  padding-top: 110px;
+  padding-bottom: 133px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+.national__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.national__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.national__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.national__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.national__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.national__descr-item,
+.national__notion-item {
+  width: 516px;
+}
+.national__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.national__descr-picture img {
+  display: block;
+  margin-left: 20px;
+  padding-top: 42px;
+  padding-bottom: 47px;
+}
+.national__descr-name {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.national__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 29px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.national__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.national__notion-text {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  color: #fff;
+}
+.national__notion-img {
+  display: block;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (min-width: 1080px) {
+  .national__name-inner {
+    padding: 0px 110px;
+  }
+  .national__item-inner {
+    padding: 0px 110px;
+  }
+}
+
+/*Страница государственная программа*/
+
+.state-program {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.state-program__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.state-program__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 10px;
+  padding-top: 75px;
+  padding-bottom: 87px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+.state-program__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.state-program__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.state-program__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.state-program__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.state-program__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.state-program__descr-item,
+.state-programm__decision-item {
+  width: 516px;
+}
+.state-program__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.state-program__descr-picture img {
+  display: block;
+  margin-left: 24px;
+  padding-top: 57px;
+  padding-bottom: 56px;
+}
+.state-program__descr-name {
+  padding: 0px;
+  padding-top: 25px;
+  margin: 0px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.state-program__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.state-program__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.state-programm__decision-text {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: justify;
+  word-spacing: -1px;
+}
+.state-programm__decision-picture {
+  padding-top: 60px;
+}
+.state-programm__decision-img {
+  display: block;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (min-width: 1080px) {
+  .state-program__name-inner {
+    padding: 0 110px;
+  }
+  .state-program__item-inner {
     padding: 0 110px;
   }
 }
