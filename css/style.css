@@ -2425,6 +2425,9 @@ input::placeholder {
   max-width: 1280px;
   margin: 0 auto;
 }
+.advisory__name-inner {
+  padding: 0 15px;
+}
 .advisory__name {
   height: 283px;
   background-image: url(../img/patent-header.png);
@@ -2435,14 +2438,14 @@ input::placeholder {
 .advisory__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
-  padding-right: 40px;
-  padding-top: 97px;
-  padding-bottom: 106px;
+  padding-left: 80px;
+  padding-right: 0px;
+  padding-top: 75px;
+  padding-bottom: 62px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 600;
   color: #fff;
 }
@@ -2454,11 +2457,16 @@ input::placeholder {
   left: 0px;
   top: 80px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .advisory__item-header {
   padding-top: 70px;
   padding-bottom: 70px;
   background-color: rgb(62, 181, 241);
+}
+.advisory__item-inner {
+  padding: 0 15px;
 }
 .advisory__item-footer {
   padding-top: 70px;
@@ -2471,7 +2479,11 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -2482,20 +2494,30 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .advisory__descr-item,
 .advisory__law-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0px auto;
 }
 .advisory__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px #313649;
+  background-size: cover;
 }
 .advisory__descr-picture img {
   display: block;
+  width: 50%;
   margin-left: 15px;
   padding-top: 50px;
   padding-bottom: 58px;
@@ -2514,12 +2536,14 @@ input::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 29px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
-  letter-spacing: 0.010em;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
+}
+.advisory__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .advisory__descr-up {
   font-size: 20px;
@@ -2530,13 +2554,12 @@ input::placeholder {
 }
 .advisory__law-text {
   padding: 0px;
-  padding-top: 32px;
   margin: 0px;
   margin-bottom: 45px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   text-align: justify;
-  font-weight: bold;
+  font-weight: 400;
   color: #fff;
 }
 .advisory__law-img {
@@ -2550,7 +2573,72 @@ input::placeholder {
   .advisory__item-inner {
     padding: 0 110px;
   }
-}
+  .advisory__title {
+    position: relative;
+    padding: 0px;
+    padding-left: 219px;
+    padding-right: 40px;
+    padding-top: 97px;
+    padding-bottom: 106px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .advisory__title::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 116px;
+    left: 0px;
+    top: 80px;
+    background-image: url(../img/icon-patent.png);
+    background-size: inherit;
+  }
+  .advisory__descr-list {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .advisory__descr-picture {
+    width: 516px;
+    height: 379px;
+    margin: 0px;
+    background-image: url(../img/service-fon.png);
+    box-shadow: 0px 0px 10px #313649;
+  }
+  .advisory__descr-picture img {
+    width: 367px;
+    height: auto;
+    padding-bottom: 45px;
+  }
+  .advisory__descr-text p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.010em;
+  }
+  .advisory__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .advisory__law-text {
+    padding-top: 32px;
+    font-size: 16px;
+  }
+  .advisory__descr-item,
+  .advisory__law-item {
+    margin: 0px;
+  }
+} 
 
 /*Страница временое проживание*/
 
