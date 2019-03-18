@@ -3183,3 +3183,224 @@ input::placeholder {
     padding: 0 110px;
   }
 }
+
+/*Страхование иностраных граждан*/
+
+.insurance {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.insurance__name {
+  height: 283px;
+  background-image: url(../img/patent-header.png);
+  background-size: cover;
+  -webkit-box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+          box-shadow:0 0 0 270px rgba(53, 59, 84, 0.8) inset;
+}
+.insurance__title {
+  position: relative;
+  padding: 0px;
+  padding-left: 219px;
+  padding-right: 10px;
+  padding-top: 115px;
+  padding-bottom: 128px;
+  margin: 0px;
+  min-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__title::before {
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 116px;
+  left: 0px;
+  top: 80px;
+  background-image: url(../img/icon-patent.png);
+}
+.insurance__item-header {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(62, 181, 241);
+}
+.insurance__item-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: rgb(49, 54, 73);
+}
+.insurance__descr-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.insurance__description {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.insurance__descr-item,
+.insurance__assist-item {
+  width: 516px;
+}
+.insurance__descr-picture {
+  width: 516px;
+  height: 379px;
+  background-image: url(../img/service-fon.png);
+  box-shadow: 0px 0px 10px #313649;
+}
+.insurance__descr-picture img {
+  display: block;
+  margin-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.insurance__descr-name {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__descr-text p {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.010em;
+  text-align: justify;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__caption {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: #313649;
+}
+.insurance__list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.insurance__item .insurance__item-text {
+  position: relative;
+  padding: 0px;
+  padding-left: 20px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__item .insurance__item-text::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 11px;
+  width: 10px;
+  height: 10px;
+  background-color: #313649;
+  border-radius: 100px;
+}
+.insurance__descr-fon {
+  font-style: italic;
+  color: #313649;
+}
+.insurance__descr-up {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__assist-text {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.038em;
+  text-align: justify;
+  color: #fff;
+}
+.insurance__assist-text:last-child {
+  margin-bottom: 0px;
+}
+.insurance__assist-block {
+  margin-bottom: 20px;
+}
+.insurance__assist-list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.insurance__assist-box p {
+  position: relative;
+  padding: 0px;
+  padding-left: 30px;
+  margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.insurance__assist-box p::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background-color: #3eb5f1;
+  border-radius: 100px;
+}
+.insurance__assist-caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.insurance__assist-fon {
+  font-style: italic;
+  color: #3eb5f1;
+}
+.insurance__assist-color {
+  display: block;
+  font-style: italic;
+  color: #3eb5f1;
+  text-transform: uppercase;
+}
+.insurance__assist-picture {
+  padding-top: 48px;
+}
+.insurance__assist-img {
+  display: block;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (min-width: 1080px) {
+  .insurance__name-inner {
+    padding: 0 110px;
+  }
+  .insurance__item-inner {
+    padding: 0 110px;
+  }
+}
