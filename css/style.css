@@ -2577,6 +2577,85 @@ input::placeholder {
   display: block;
   box-shadow: 0px 0px 10px #000000;
 }
+@media (min-width: 768px) {
+  .advisory__title {
+    padding: 0px;
+    padding-left: 150px;
+    padding-right: 10px;
+    padding-top: 105px;
+    padding-bottom: 122px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .advisory__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .advisory__descr-name {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .advisory__descr-text p {
+    font-size: 16px;
+  }
+  .advisory__law-text {
+    font-size: 16px;
+  }
+  .advisory__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .advisory__descr-picture img {
+    width: 65%;
+    padding-bottom: 43px;
+  }
+}
+@media (min-width: 1024px) {
+  .advisory__descr-list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .advisory__title {
+    padding: 0px;
+    padding-left: 170px;
+    padding-right: 70px;
+    padding-top: 105px;
+    padding-bottom: 111px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .advisory__descr-item, .advisory__law-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .advisory__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .advisory__descr-picture img {
+    width: 68%;
+    padding-bottom: 51px;
+  }
+  .advisory__descr-name {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .advisory__descr-text p {
+    margin-bottom: 20px;
+  }
+  .advisory__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 1080px) {
   .advisory__name-inner {
     padding: 0 110px;
@@ -2628,6 +2707,13 @@ input::placeholder {
     height: auto;
     padding-bottom: 45px;
   }
+  .advisory__descr-name {
+    padding-top: 29px;
+    margin-bottom: 24px;
+  }
+  .advisory__descr-text p {
+    margin-bottom: 29px;
+  }
   .advisory__descr-text p {
     font-size: 16px;
     line-height: 24px;
@@ -2647,6 +2733,7 @@ input::placeholder {
   }
   .advisory__descr-item,
   .advisory__law-item {
+    max-width: 516px;
     margin: 0px;
   }
 } 
