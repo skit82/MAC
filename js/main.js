@@ -1,12 +1,19 @@
 $(document).ready(function() {
 
-    $('.header-menu-mob__item--humburger').on('click', function() {
-        $('.menu__list, .menu__social').slideToggle(100, function(){
-          if($(this).css('display') === 'none'){
-          $(this).removeAttr('style')
-          };
-      });
-    })
+    // $('.header-menu-mob__item--humburger').on('click', function() {
+        // $('.menu__list, .menu__social').slideToggle(100, function(){
+          // if($(this).css('display') === 'none'){
+          // $(this).removeAttr('style')
+          // };
+      // });
+    // })
+
+    $(".header-menu-mob__item--humburger").click(function () {
+      $(".menu-main").toggleClass("menu-open");
+      $(".nav-bar").toggleClass("open-menu");
+      $(".menu-main .bar").toggleClass("animate");
+      // $("body").toggleClass("open-menu");
+    });  
 
     $('.spoiler__link').click(function(){ 
       $(this).parent().children('div.spoiler__content').toggle('fast');
