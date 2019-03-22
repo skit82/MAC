@@ -454,6 +454,9 @@ body {
   .menu {
     padding: 0 15px;
   }
+  .menu-main {
+    display: none;
+  }
   .header-menu-mob {
     display: none;
   }
@@ -607,6 +610,9 @@ body {
   }
 }
 @media (min-width: 1080px) {
+  .menu {
+    padding: 0px;
+  }
   .menu__mob {
     display: none;
   }
@@ -825,6 +831,19 @@ body {
     }
 }
 @media (min-width: 1080px) {
+  #example {
+    /*padding:0px 0px 0px 100px;*/
+    display:none;
+  }
+  #example .new{opacity: 0;}
+  #example .div_opacity{
+  -webkit-transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -ms-transition: opacity .1s ease-in-out;
+  -o-transition: opacity .1s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  opacity: 1;
+  }
   .promo__inner {
     padding: 0 110px;
   }
