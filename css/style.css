@@ -207,6 +207,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  min-height: 69px;
 }
 .header-menu-mob__link {
   position: relative;
@@ -2370,17 +2371,17 @@ input::placeholder {
 .patent__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
-  padding-right: 280px;
-  padding-top: 101px;
-  padding-bottom: 101px;
+  padding-left: 80px;
+  padding-right: 0px;
+  padding-top: 80px;
+  padding-bottom: 138px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 600;
   color: #fff;
-  }
+}
 .patent__title::before {
   position: absolute;
   content: "";
@@ -2389,6 +2390,8 @@ input::placeholder {
   left: 0px;
   top: 80px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .patent__item-header {
   padding-top: 70px;
@@ -2406,19 +2409,23 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
 }
 .patent__descr-item,
 .patent__paper-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0 auto;
 }
 .patent__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-size: cover;
   box-shadow: 0px 0px 10px #313649;
 }
 .patent__paper-img {
@@ -2427,13 +2434,14 @@ input::placeholder {
 }
 .patent__descr-picture img {
   display: block;
-  margin-left: 30px;
-  padding-top: 70px;
-  padding-bottom: 78px;
+  width: 60%;
+  margin-left: 20px;
+  padding-top: 45px;
+  padding-bottom: 44px;
 }
 .patent__descr-name {
   padding: 0px;
-  padding-top: 50px;
+  padding-top: 30px;
   margin: 0px;
   margin-bottom: 30px;
   font-size: 20px;
@@ -2444,13 +2452,16 @@ input::placeholder {
 .patent__descr-text p {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 80px;
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
   text-align: justify;
-  letter-spacing: 0.050em;
+  letter-spacing: 0.00em;
   color: #fff;
+}
+.patent__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .patent__description {
   display: -webkit-flex;
@@ -2458,7 +2469,7 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .patent__paper-list {
   padding: 0px;
@@ -2469,7 +2480,7 @@ input::placeholder {
 }
 .patent__paper-block {
   position: relative;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   color: #fff;
   font-weight: 400;
@@ -2486,14 +2497,14 @@ input::placeholder {
 }
 .patent__paper-text {
   padding: 0px;
-  padding-left: 30px;
+  padding-left: 25px;
   margin: 0px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   text-align: justify;
-  letter-spacing: 0.010em;
+  letter-spacing: 0.00em;
   color: #fff;
 }
 .patent__paper-link {
@@ -2502,6 +2513,7 @@ input::placeholder {
   height: 40px;
   margin: 0 auto;
   margin-top: 38px;
+  margin-bottom: 30px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -2513,12 +2525,140 @@ input::placeholder {
   background-image: -webkit-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
 }
+.patent__name-inner {
+  padding: 0px 15px;
+}
+.patent__item-inner {
+  padding: 0px 15px;
+}
+@media (min-width: 768px) {
+  .patent__title {
+    padding-left: 150px;
+    padding-right: 10px;
+    padding-top: 110px;
+    padding-bottom: 117px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .patent__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .patent__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .patent__descr-picture img {
+    width: 65%;
+    margin-left: 25px;
+    padding-top: 50px;
+    padding-bottom: 66px;
+  }
+  .patent__descr-text p {
+    font-size: 16px;
+  }
+  .patent__paper-block {
+    font-size: 16px;
+  }
+  .patent__paper-text {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .patent__title {
+    padding-left: 170px;
+    padding-right: 220px;
+    padding-top: 100px;
+    padding-bottom: 115px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .patent__paper-link {
+    margin-bottom: 0px;
+  }
+  .patent__descr-list,
+  .patent__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .patent__paper-item,
+  .patent__descr-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .patent__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .patent__descr-text p {
+    margin-bottom: 80px;
+  }
+}
 @media (min-width: 1080px) {
   .patent__name-inner {
     padding: 0 110px;
   }
   .patent__item-inner {
     padding: 0 110px;
+  }
+  .patent__paper-item,
+  .patent__descr-item {
+    max-width: 516px;
+  }
+  .patent__title {
+    padding-left: 219px;
+    padding-right: 280px;
+    padding-top: 101px;
+    padding-bottom: 101px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .patent__title::before {
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 116px;
+    left: 0px;
+    top: 80px;
+    background-image: url(../img/icon-patent.png);
+    background-size: inherit;
+  }
+  .patent__descr-picture {
+    width: 516px;
+    height: 379px;
+  }
+  .patent__descr-picture img {
+    width: 331px;
+    margin-left: 30px;
+    padding-top: 70px;
+    padding-bottom: 78px;
+  }
+  .patent__descr-name {
+    padding-top: 50px;
+  }
+  .patent__descr-text p {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.050em;
+  }
+  .patent__paper-block {
+    font-size: 16px;
+  }
+  .patent__paper-text {
+    padding-left: 30px;
+    font-size: 16px;
+    letter-spacing: 0.010em;
   }
 }
 
@@ -2976,6 +3116,12 @@ input::placeholder {
   max-width: 1280px;
   margin: 0 auto;
 }
+.residence__name-inner {
+  padding: 0 15px;
+}
+.residence__item-inner {
+  padding: 0 15px;
+}
 .residence__name {
   height: 283px;
   background-image: url(../img/patent-header.png);
@@ -2986,14 +3132,14 @@ input::placeholder {
 .residence__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
+  padding-left: 80px;
   padding-right: 0px;
-  padding-top: 60px;
-  padding-bottom: 79px;
+  padding-top: 75px;
+  padding-bottom: 40px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 48px;
+  font-size: 18px;
+  line-height: 24px;
   font-weight: 600;
   color: #fff;
 }
@@ -3005,6 +3151,8 @@ input::placeholder {
   left: 0px;
   top: 80px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .residence__item-header {
   padding-top: 70px;
@@ -3022,7 +3170,11 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -3033,27 +3185,38 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .residence__descr-item,
 .residence__allow-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0 auto;
 }
 .residence__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px #313649;
+  background-size: cover;
 }
 .residence__descr-picture img {
   display: block;
-  margin-left: 25px;
-  padding-top: 68px;
-  padding-bottom: 70px;
+  width: 65%;
+  margin-left: 15px;
+  padding-top: 38px;
+  padding-bottom: 38px;
 }
 .residence__descr-name {
   padding: 0px;
   margin: 0px;
+  margin-top: 25px;
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 24px;
@@ -3064,12 +3227,15 @@ input::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 29px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.010em;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.00em;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
+}
+.residence__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .residence__descr-up {
   display: block;
@@ -3082,7 +3248,7 @@ input::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 28px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
@@ -3092,12 +3258,108 @@ input::placeholder {
   display: block;
   box-shadow: 0px 0px 10px #000000;
 }
+@media (min-width: 768px) {
+  .residence__title {
+    padding-left: 150px;
+    padding-top: 95px;
+    padding-bottom: 103px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .residence__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .residence__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .residence__descr-picture img {
+    width: 67%;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+  .residence__descr-text p {
+    font-size: 16px;
+  }
+  .residence__allow-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .residence__title {
+    padding-left: 170px;
+    padding-top: 90px;
+    padding-bottom: 92px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .residence__descr-list,
+  .residence__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .residence__descr-item,
+  .residence__allow-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .residence__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .residence__descr-name {
+    margin-top: 0px;
+  }
+  .residence__descr-text p {
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.010em;
+  }
+  .residence__allow-text:last-child {
+    margin-bottom: 0px;
+  }
+}
 @media (min-width: 1080px) {
   .residence__name-inner {
     padding: 0 110px;
   }
   .residence__item-inner {
     padding: 0 110px;
+  }
+  .residence__title {
+    padding-left: 219px;
+    padding-right: 0px;
+    padding-top: 70px;
+    padding-bottom: 69px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .residence__title::before {
+    width: 120px;
+    height: 116px;
+    background-size: inherit;
+  } 
+  .residence__descr-picture {
+    width: 516px;
+    height: 379px;
+  }
+  .residence__descr-picture img {
+    display: block;
+    width: 337px;
+    margin-left: 25px;
+    padding-top: 68px;
+    padding-bottom: 70px;
+  }
+  .residence__descr-item,
+  .residence__allow-item {
+    max-width: 516px;
   }
 }
 
@@ -3106,6 +3368,12 @@ input::placeholder {
 .permit {
   max-width: 1280px;
   margin: 0 auto;
+}
+.permit__name-inner {
+  padding: 0px 15px;
+}
+.permit__item-inner {
+  padding: 0px 15px;
 }
 .permit__name {
   height: 283px;
@@ -3117,14 +3385,14 @@ input::placeholder {
 .permit__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
-  padding-right: 10px;
+  padding-left: 80px;
+  padding-right: 0px;
   padding-top: 75px;
-  padding-bottom: 87px;
+  padding-bottom: 78px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 600;
   color: #fff;
 }
@@ -3136,6 +3404,8 @@ input::placeholder {
   left: 0px;
   top: 80px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .permit__item-header {
   padding-top: 70px;
@@ -3153,7 +3423,11 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -3164,27 +3438,38 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .permit__descr-item,
 .permit__issues-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0px auto;
 }
 .permit__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px #313649;
+  background-size: cover;
 }
 .permit__descr-picture img {
   display: block;
-  margin-left: 25px;
-  padding-top: 68px;
-  padding-bottom: 70px;
+  width: 65%;
+  margin-left: 15px;
+  padding-top: 45px;
+  padding-bottom: 42px;
 }
 .permit__descr-name {
   padding: 0px;
   margin: 0px;
+  margin-top: 25px;
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 24px;
@@ -3195,12 +3480,15 @@ input::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 29px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.010em;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.00em;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
+}
+.permit__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .permit__descr-up {
   display: block;
@@ -3212,7 +3500,7 @@ input::placeholder {
 .permit__issues-text {
   padding: 0px;
   margin: 0px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   word-spacing: -1px;
@@ -3220,14 +3508,88 @@ input::placeholder {
   color: #fff;
 }
 .permit__issues-text span {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
+}
+.permit__issues-text:last-child {
+  margin-bottom: 25px;
 }
 .permit__issues-img {
   display: block;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+@media (min-width: 768px) {
+  .permit__title {
+    padding-left: 150px;
+    padding-right: 10px;
+    padding-top: 90px;
+    padding-bottom: 109px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .permit__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .permit__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .permit__descr-picture img {
+    padding-top: 60px;
+    padding-bottom: 71px;
+  }
+  .permit__descr-text p {
+    font-size: 16px;
+  }
+  .permit__issues-text span {
+    font-size: 16px;
+  }
+  .permit__issues-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .permit__descr-list,
+  .permit__description {
+    justify-content: space-between;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  .permit__issues-item,
+  .permit__descr-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .permit__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .permit__descr-picture img {
+    width: 325px;
+  }
+  .permit__title {
+    padding-left: 170px;
+    padding-right: 70px;
+    padding-bottom: 92px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .permit__descr-name {
+    margin-top: 0px;
+  }
+  .permit__descr-text p {
+    line-height: 30px;
+    letter-spacing: 0.010em;
+  }
+  .permit__issues-text:last-child {
+    margin-bottom: 0px;
+  }
 }
 @media (min-width: 1080px) {
   .permit__name-inner {
@@ -3236,6 +3598,42 @@ input::placeholder {
   .permit__item-inner {
     padding: 0 110px;
   }
+  .permit__issues-item,
+  .permit__descr-item {
+    max-width: 516px;
+  }
+  .permit__title {
+    padding-left: 219px;
+    padding-right: 10px;
+    padding-top: 75px;
+    padding-bottom: 87px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .permit__title::before {
+    width: 120px;
+    height: 116px;
+    left: 0px;
+    top: 80px;
+    background-size: inherit;
+  }
+  .permit__descr-picture {
+    width: 516px;
+    height: 379px;
+    margin: 0px;
+  }
+  .permit__descr-picture img {
+    display: block;
+    width: 352px;
+    margin-left: 25px;
+    padding-top: 72px;
+    padding-bottom: 77px;
+  }
+  .permit__descr-text p {
+    margin-bottom: 55px;
+  }
 }
 
 /*Страница Гражданство*/
@@ -3243,6 +3641,12 @@ input::placeholder {
 .national {
   max-width: 1280px;
   margin: 0 auto;
+}
+.national__name-inner {
+  padding: 0 15px;
+}
+.national__item-inner {
+  padding: 0 15px;
 }
 .national__name {
   height: 283px;
@@ -3254,14 +3658,14 @@ input::placeholder {
 .national__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
-  padding-right: 10px;
-  padding-top: 110px;
-  padding-bottom: 133px;
+  padding-left: 80px;
+  padding-right: 0px;
+  padding-top: 104px;
+  padding-bottom: 136px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 600;
   color: #fff;
 }
@@ -3271,8 +3675,10 @@ input::placeholder {
   width: 120px;
   height: 116px;
   left: 0px;
-  top: 80px;
+  top: 95px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .national__item-header {
   padding-top: 70px;
@@ -3290,7 +3696,11 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -3301,27 +3711,38 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .national__descr-item,
 .national__notion-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0px auto;
 }
 .national__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px #313649;
+  background-size: cover;
 }
 .national__descr-picture img {
   display: block;
-  margin-left: 20px;
-  padding-top: 42px;
-  padding-bottom: 47px;
+  width: 65%;
+  margin-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 27px;
 }
 .national__descr-name {
   padding: 0px;
   margin: 0px;
+  margin-top: 25px;
   margin-bottom: 24px;
   font-size: 20px;
   line-height: 24px;
@@ -3332,12 +3753,15 @@ input::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 29px;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.010em;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.00em;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
+}
+.national__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .national__descr-up {
   display: block;
@@ -3349,7 +3773,8 @@ input::placeholder {
 .national__notion-text {
   padding: 0px;
   margin: 0px;
-  font-size: 16px;
+  margin-bottom: 25px;
+  font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   text-align: justify;
@@ -3359,12 +3784,102 @@ input::placeholder {
   display: block;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
+@media (min-width: 768px) {
+  .national__title {
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 118px;
+    padding-bottom: 136px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .national__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .national__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .national__descr-picture img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .national__descr-text p {
+    font-size: 16px;
+  }
+  .national__notion-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .national__descr-name {
+    margin-top: 0px;
+  }
+  .national__descr-list,
+  .national__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .national__descr-item,
+  .national__notion-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .national__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .national__descr-picture img {
+    padding-top: 50px;
+    padding-bottom: 49px;
+  }
+  .national__descr-text p {
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.010em;
+    text-align: justify;
+  }
+  .national__notion-text {
+    margin-bottom: 0px;
+  }
+}
 @media (min-width: 1080px) {
   .national__name-inner {
     padding: 0px 110px;
   }
   .national__item-inner {
     padding: 0px 110px;
+  }
+  .national__descr-item,
+  .national__notion-item {
+    max-width: 516px;
+  }
+  .national__descr-picture {
+    width: 516px;
+    height: 379px;
+  }
+  .national__title {
+    padding-left: 219px;
+    padding-right: 10px;
+    padding-top: 110px;
+    padding-bottom: 133px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .national__descr-picture img {
+    display: block;
+    width: 356px;
+    margin-left: 20px;
+    padding-top: 42px;
+    padding-bottom: 47px;
   }
 }
 
@@ -3373,6 +3888,12 @@ input::placeholder {
 .state-program {
   max-width: 1280px;
   margin: 0 auto;
+}
+.state-program__name-inner {
+  padding: 0px 15px;
+}
+.state-program__item-inner {
+  padding: 0px 15px;
 }
 .state-program__name {
   height: 283px;
@@ -3384,14 +3905,14 @@ input::placeholder {
 .state-program__title {
   position: relative;
   padding: 0px;
-  padding-left: 219px;
-  padding-right: 10px;
+  padding-left: 80px;
+  padding-right: 0px;
   padding-top: 75px;
-  padding-bottom: 87px;
+  padding-bottom: 78px;
   margin: 0px;
   min-height: 50px;
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 600;
   color: #fff;
 }
@@ -3403,6 +3924,8 @@ input::placeholder {
   left: 0px;
   top: 80px;
   background-image: url(../img/icon-patent.png);
+  background-size: 70px 66px;
+  background-repeat: no-repeat;
 }
 .state-program__item-header {
   padding-top: 70px;
@@ -3420,7 +3943,11 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -3431,23 +3958,33 @@ input::placeholder {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .state-program__descr-item,
 .state-programm__decision-item {
-  width: 516px;
+  max-width: 516px;
+  margin: 0 auto;
 }
 .state-program__descr-picture {
-  width: 516px;
-  height: 379px;
+  display: block;
+  width: 290px;
+  height: 210px;
+  margin: 0 auto;
   background-image: url(../img/service-fon.png);
+  background-repeat: no-repeat;
   box-shadow: 0px 0px 10px #313649;
+  background-size: cover;
 }
 .state-program__descr-picture img {
   display: block;
-  margin-left: 24px;
-  padding-top: 57px;
-  padding-bottom: 56px;
+  width: 65%;
+  margin-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 32px;
 }
 .state-program__descr-name {
   padding: 0px;
@@ -3462,13 +3999,16 @@ input::placeholder {
 .state-program__descr-text p {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 60px;
-  font-size: 16px;
+  margin-bottom: 30px;
+  font-size: 13px;
   line-height: 30px;
-  letter-spacing: 0.010em;
+  letter-spacing: 0.00em;
   text-align: justify;
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
+}
+.state-program__descr-text p:last-child {
+  margin-bottom: 0px;
 }
 .state-program__descr-up {
   display: block;
@@ -3480,7 +4020,7 @@ input::placeholder {
 .state-programm__decision-text {
   padding: 0px;
   margin: 0px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   color: #ffffff;
@@ -3494,12 +4034,111 @@ input::placeholder {
   display: block;
   box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
+@media (min-width: 768px) {
+  .state-program__title {
+    padding-left: 150px;
+    padding-right: 10px;
+    padding-top: 95px;
+    padding-bottom: 103px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .state-program__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
+  .state-program__descr-picture {
+    width: 480px;
+    height: 334px;
+  }
+  .state-program__descr-picture img {
+    padding-top: 40px;
+    padding-bottom: 49px;
+  }
+  .state-program__descr-text p {
+    font-size: 16px;
+  }
+  .state-programm__decision-text {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .state-program__title {
+    padding-left: 170px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 116px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .state-program__descr-picture {
+    width: 475px;
+    height: 350px;
+  }
+  .state-program__descr-picture img {
+    width: 320px;
+    padding-top: 50px;
+    padding-bottom: 49px;
+  }
+  .state-program__descr-item,
+  .state-programm__decision-item {
+    max-width: 475px;
+    margin: 0px;
+  }
+  .state-program__descr-list,
+  .state-program__description {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media (min-width: 1080px) {
   .state-program__name-inner {
     padding: 0 110px;
   }
   .state-program__item-inner {
     padding: 0 110px;
+  }
+  .state-program__title {
+    padding-left: 219px;
+    padding-right: 10px;
+    padding-top: 75px;
+    padding-bottom: 87px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .state-program__title::before {
+    width: 120px;
+    height: 116px;
+    left: 0px;
+    top: 80px;
+    background-size: inherit;
+  }
+  .state-program__descr-item,
+  .state-programm__decision-item {
+    max-width: 516px;
+  }
+  .state-program__descr-picture {
+    width: 516px;
+    height: 379px;
+  }
+  .state-program__descr-picture img {
+    display: block;
+    width: 339px;
+    margin-left: 24px;
+    padding-top: 57px;
+    padding-bottom: 56px;
+  }
+  .state-program__descr-text p {
+    margin-bottom: 60px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.010em;
   }
 }
 
