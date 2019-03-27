@@ -642,22 +642,6 @@ body {
     background-color: rgb(49, 54, 73);
     border-bottom: 1px solid #4c5161;
   }
-  input::-webkit-input-placeholder {
-    font-size: 16px;
-   
-  }
-  input:-ms-input-placeholder {
-    font-size: 16px;
-    /*line-height: 25px;*/
-  }
-  input::-ms-input-placeholder {
-    font-size: 16px;
-    /*line-height: 25px;*/
-  }
-  input::placeholder {
-    font-size: 16px;
-    /*line-height: 25px;*/
-  }
   .page-header__img {
     width: 18px;
     height: 18px;
@@ -773,7 +757,7 @@ body {
 .promo__name {
   padding: 0px;
   margin: 0px;
-  font-size: 17px;
+  font-size: 15px;
   line-height: 20px;
   font-weight: 600;
   margin-bottom: 70px;
@@ -1418,21 +1402,25 @@ body {
   padding: 5px 5px;
   border-bottom: 1px solid #e4e4e7;
 }
-input::-webkit-input-placeholder {
-  font-size: 12px;
-  /*line-height: 25px;*/
+input[type="search"] {
+  -webkit-appearance: none;
+  background-color: inherit;
+  color: rgba(49, 54, 73, 0.75);
 }
-input:-ms-input-placeholder {
-  font-size: 12px;
-  /*line-height: 25px;*/
+input[type="search"]::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: normal;
+  color: rgba(49, 54, 73, 0.75);
 }
-input::-ms-input-placeholder {
-  font-size: 12px;
-  /*line-height: 25px;*/
+input[type="search"]::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: normal;
+  color: rgba(49, 54, 73, 0.75);
 }
-input::placeholder {
-  font-size: 12px;
-  /*line-height: 25px;*/
+input[type="search"]::placeholder {
+  font-size: 16px;
+  line-height: normal;
+  color: inherit;
 }
 .page-footer__copyright p {
   padding: 0px;
@@ -2378,6 +2366,8 @@ input::placeholder {
   -webkit-transition: all .7s;
   -o-transition: all .7s;
   transition: all .7s;
+  z-index: 1;
+  will-change: transform;
 }
 .service__descr-item:hover .service__pop-up {
   opacity: 1;
@@ -3151,7 +3141,8 @@ input::placeholder {
 }
 .notary__descr-up {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
+  /*font-size: 20px;*/
   line-height: 30px;
   font-weight: 600;
 }
@@ -4484,6 +4475,7 @@ input::placeholder {
   min-height: 50px;
   font-size: 18px;
   line-height: 22px;
+  text-align: justify;
   font-weight: 600;
   color: #fff;
 }
@@ -4619,6 +4611,7 @@ input::placeholder {
     padding-bottom: 103px;
     font-size: 20px;
     line-height: 28px;
+    text-align: left;
   }
   .state-program__title::before {
     top: 95px;
