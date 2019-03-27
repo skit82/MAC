@@ -1403,24 +1403,18 @@ body {
   border-bottom: 1px solid #e4e4e7;
 }
 input[type="search"] {
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
+  font-size: 12px;
+  line-height: 24px;
   background-color: inherit;
   color: rgba(49, 54, 73, 0.75);
 }
-input[type="search"]::-webkit-input-placeholder {
-  -webkit-appearance: textfield;
-  font-size: 16px;
-  line-height: normal;
-  color: rgba(49, 54, 73, 0.75);
-}
 input[type="search"]::-ms-input-placeholder {
-  -webkit-appearance: textfield;
   font-size: 16px;
   line-height: normal;
   color: rgba(49, 54, 73, 0.75);
 }
 input[type="search"]::placeholder {
-  -webkit-appearance: textfield;
   font-size: 16px;
   line-height: normal;
   color: inherit;
