@@ -2893,7 +2893,7 @@ input[type="search"]::placeholder {
 @media (min-width: 768px) {
   .patent__title {
     padding-left: 150px;
-    padding-right: 60px;
+    padding-right: 120px;
     padding-top: 110px;
     padding-bottom: 117px;
     margin: 0px;
