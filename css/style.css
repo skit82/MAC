@@ -769,7 +769,8 @@ body {
 .service__pop-up-link,
 .page-footer__contact-btn,
 .patent__paper-link,
-.other__link {
+.other__link,
+.contact-form__link {
   position: relative;
   overflow: hidden;
 }
@@ -794,7 +795,8 @@ body {
 .service__pop-up-link:before,
 .page-footer__contact-btn:before,
 .patent__paper-link:bedore,
-.other__link:before {
+.other__link:before,
+.contact-form__link:before {
     content: "";
     display: block;
     width: 100%;
@@ -815,7 +817,8 @@ body {
 .service__pop-up-link:after,
 .page-footer__contact-btn:after,
 .patent__paper-link:after,
-.other__link:after {
+.other__link:after,
+.contact-form__link:after {
     content: "";
     display: block;
     width: 15px;
@@ -850,13 +853,23 @@ body {
   100% { left: 110%; margin-left: 80px; } }
 
 .promo__link:hover,
-.presentation__support__link:hover {
+.presentation__support__link:hover,
+.page-footer__contact-btn:hover,
+.service__pop-up-link:hover,
+.patent__paper-link:hover,
+.other__link:hover,
+.contact-form__link:hover {
   border: 3px solid #1c31de;
   background-image: -webkit-linear-gradient( 90deg, rgb(22,45,181) 0%, rgb(11,114,213) 72%, rgb(0,182,244) 100%);
   background-image: -ms-linear-gradient( 90deg, rgb(22,45,181) 0%, rgb(11,114,213) 72%, rgb(0,182,244) 100%);
 }
 .promo__link:active,
-.presentation__support__link:active {
+.presentation__support__link:active,
+.page-footer__contact-btn:active,
+.service__pop-up-link:active,
+.patent__paper-link:active,
+.other__link:active,
+.contact-form__link:active {
   border: 3px solid #1c31de;
   -webkit-box-shadow: 0 2px 2px rgba(40, 67, 185, 0.2);
           box-shadow: 0 2px 2px rgba(40, 67, 185, 0.2);
