@@ -5411,6 +5411,8 @@ input[type="search"]::placeholder {
   margin: 0 auto;
   background-color: #313649;
   border-collapse: collapse;
+  -webkit-box-shadow: 0px 0px 10px #313649;
+    box-shadow: 0px 0px 10px #313649;
 }
 .test-info__name--testing {
   width: 515px;
@@ -5424,13 +5426,13 @@ input[type="search"]::placeholder {
   color: #313649;
   text-align: center;
   background: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #000;
 }
 .test-info__header th:first-child {
-  border-right: 2px solid #313649; 
+  border-right: 2px solid rgb(62, 181, 241); 
 }
 .test-info__header th:last-child {
-  border-left: 2px solid #313649;
+  border-left: 2px solid rgb(62, 181, 241);
 }
 .test-info__header td {
   padding: 7px 10px;
@@ -5438,17 +5440,32 @@ input[type="search"]::placeholder {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  border: 1px solid #fff;
   text-align: center;
   min-height: 170px;
+}
+.test-info__header {
+  border-right: 2px solid #000;
+  border-left: 2px solid #000;
+}
+.test-info__list:nth-child(1),
+.test-info__list:nth-child(2),
+.test-info__list:nth-child(3),
+.test-info__list:nth-child(4) {
+  border-bottom: 2px solid rgb(62, 181, 241);
+}
+.test-info__list:nth-child(1) {
+  border-top: 2px solid #000;
+}
+.test-info__list:nth-child(5) {
+  border-bottom: 2px solid #000;
 }
 .test-info__header td:first-child {
   text-align: left;
   /*padding-left: 30px;*/
-  border-right: 2px solid #ffffff;
+  border-right: 2px solid rgb(62, 181, 241);
 }
 .test-info__header td:last-child {
-  border-left: 2px solid #ffffff;
+  border-left: 2px solid rgb(62, 181, 241);
 }
 @media (min-width: 768px) {
   .test__title {
@@ -6256,6 +6273,7 @@ input::placeholder {
   font-size: 11px;
   line-height: 24px;
   font-weight: 400;
+  text-align: center;
   color: #fff;
   background-color: rgb(49, 54, 73);
 }

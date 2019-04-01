@@ -21,7 +21,7 @@ $(document).ready(function() {
         var $this = $(this);
       $this.html(string.replace(/./g, '<span class="new">$&</span>'));
       $this.find('span.new').each(function(i, el){
-      setTimeout(function(){ $(el).addClass('div_opacity'); }, 40 * i);
+      setTimeout(function(){ $(el).addClass('div_opacity'); }, 30 * i);
     });
     });
     };
