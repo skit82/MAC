@@ -1852,12 +1852,13 @@ input[type="search"]::placeholder {
 .presentation__support {
 }
 .presentation__support-descr h2 {
-  padding: 0px;
+  padding: 0px 25px;
   margin: 0px;
   margin-bottom: 15px;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 600;
+  text-align: center;
   color: #313649;
 }
 .presentation__support-descr p {
@@ -1887,9 +1888,10 @@ input[type="search"]::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 600;
+  text-align: center;
   color: #fff;
 }
 .presentation__direction-descr p {
@@ -1913,11 +1915,13 @@ input[type="search"]::placeholder {
     display: block;
     padding: 0px;
     margin: 0px;
+    padding: 0 10px;
     padding-top: 25px;
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     font-weight: 600;
+    text-align: center;
     color: #313649;
 }
 .presentation__description p {
@@ -1954,9 +1958,10 @@ input[type="search"]::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 28px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 600;
+  text-align: center;
   color: #fff;
 }
 .presentation__criteria-name {
@@ -2051,6 +2056,7 @@ input[type="search"]::placeholder {
   }
   .presentation__criteria-title {
     font-size: 20px;
+    text-align: left;
   }
   .presentation__criteria-name {
     font-size: 16px;
@@ -2066,8 +2072,10 @@ input[type="search"]::placeholder {
     padding-bottom: 50px;
   }
   .presentation__support-descr h2 {
+    padding: 0px;
     margin-bottom: 35px;
     font-size: 20px;
+    text-align: left;
   }
   .presentation__support-descr p {
     margin-bottom: 34px;
@@ -2078,6 +2086,7 @@ input[type="search"]::placeholder {
   .presentation__direction-descr h2 {
     margin-bottom: 28px;
     font-size: 20px;
+    text-align: left;
   }
   .presentation__direction-descr p {
     font-size: 16px;
@@ -2099,9 +2108,12 @@ input[type="search"]::placeholder {
     color: #fff;
   }
   .presentation__description span {
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 70px;
     margin-bottom: 34px;
     font-size: 20px;
+    text-align: left;
   }
   .presentation__description p {
     margin-bottom: 28px;
