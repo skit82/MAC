@@ -5769,9 +5769,9 @@ input[type="search"]::placeholder {
 }
 .contact__text {
   padding: 0px;
-  padding-left: 30px;
+  padding-left: 25px;
   margin: 0px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 36px;
   font-weight: 400;
   color: #fff;
@@ -5904,7 +5904,7 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-.contact-form__textarea:-ms-input-placeholder {
+.contact-form__textarea::-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
@@ -5922,19 +5922,19 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-input::-webkit-input-placeholder {
+.contact-form__input::-webkit-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
 }
-input:-ms-input-placeholder {
+.contact-form__input::-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
 }
-input::-ms-input-placeholder {
+.contact-form__input::-ms-input-placeholder {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
@@ -5992,6 +5992,7 @@ input::placeholder {
   }
   .contact__text {
     font-size: 16px;
+    padding-left: 30px;
   }
   .contact__viber {
     font-size: 16px;
