@@ -1940,9 +1940,11 @@ input[type="search"]::placeholder {
 .presentation__support {
     padding: 0 15px;
     padding-top: 67px;
-    padding-bottom: 85px;
+    padding-bottom: 50px;
 }
 .presentation__criteria {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: rgb(49, 54, 73);
 }
 .presentation__criteria-inner {
@@ -1952,7 +1954,7 @@ input[type="search"]::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 28px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 600;
   color: #fff;
@@ -1961,7 +1963,7 @@ input[type="search"]::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   color: #fff;
@@ -1986,7 +1988,7 @@ input[type="search"]::placeholder {
   padding: 0px;
   margin: 0px;
   margin-bottom: 30px;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 24px;
   text-align: justify;
   letter-spacing: 0.01em;
@@ -2006,7 +2008,36 @@ input[type="search"]::placeholder {
   background-color: #3eb5f1;
   border-radius: 100px;
 }
+.presentation__title {
+    position: relative;
+    padding: 0px;
+    padding-left: 80px;
+    padding-right: 10px;
+    padding-top: 110px;
+    padding-bottom: 134px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .presentation__title::before {
+    position: absolute;
+    content: "";
+    width: 128px;
+    height: 116px;
+    left: 0px;
+    top: 95px;
+    background-image: url(../img/icon-company.png);
+    background-size: 70px 66px;
+    background-repeat: no-repeat;
+  }
 @media (min-width: 768px) {
+  .presentation__title::before {
+    top: 95px;
+    background-size: 90px 86px;
+  }
   .presentation__work-list {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -2017,6 +2048,18 @@ input[type="search"]::placeholder {
   .presentation__criteria {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+  .presentation__criteria-title {
+    font-size: 20px;
+  }
+  .presentation__criteria-name {
+    font-size: 16px;
+  }
+  .presentation__criteria-item-text {
+    font-size: 16px;
+  }
+  .presentation__criteria-text {
+    font-size: 16px;
   }
   .presentation__support {
     padding-top: 30px;
@@ -2042,27 +2085,18 @@ input[type="search"]::placeholder {
     letter-spacing: 0.01em;
   }
   .presentation__title {
-  position: relative;
-  padding: 0px;
-  padding-left: 219px;
-  padding-right: 80px;
-  padding-top: 127px;
-  padding-bottom: 130px;
-  margin: 0px;
-  min-height: 50px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #fff;
-  }
-  .presentation__title::before {
-    position: absolute;
-    content: "";
-    width: 128px;
-    height: 116px;
-    left: 0px;
-    top: 83px;
-    background-image: url(../img/icon-company.png);
+    position: relative;
+    padding: 0px;
+    padding-left: 150px;
+    padding-right: 80px;
+    padding-top: 118px;
+    padding-bottom: 141px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
   }
   .presentation__description span {
     padding-top: 70px;
@@ -2111,36 +2145,54 @@ input[type="search"]::placeholder {
     font-size: 30px;
     line-height: 30px;
   }
+  .presentation__work-item {
+    margin: 0px auto;
+  }
+  .presentation__support {
+    padding: 0 15px;
+    padding-top: 67px;
+    padding-bottom: 85px;
+  }
 }
+@media (min-width: 1024px) {
+  .presentation__work-item {
+    width: 450px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+} 
 @media (min-width: 1080px) {
-.presentation__name-inner,
-.presentation__work-inner {
-  padding: 0 110px;
-}
-.presentation__direction-inner {
-  padding: 70px 110px;
-}
-.presentation__criteria-inner {
-  padding: 0 110px;
-}
-.presentation__support {
-  padding: 0 110px;
-  padding-top: 67px;
-  padding-bottom: 85px;
-}
-.presentation__title {
-  position: relative;
-  padding: 0px;
-  padding-left: 219px;
-  padding-right: 220px;
-  padding-top: 127px;
-  padding-bottom: 130px;
-  margin: 0px;
-  min-height: 50px;
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 600;
-  color: #fff;
+  .presentation__name-inner,
+  .presentation__work-inner {
+    padding: 0 110px;
+  }
+  .presentation__work-item {
+      width: 490px;
+    }
+  .presentation__direction-inner {
+    padding: 70px 110px;
+  }
+  .presentation__criteria-inner {
+    padding: 0 110px;
+  }
+  .presentation__support {
+    padding: 0 110px;
+    padding-top: 67px;
+    padding-bottom: 85px;
+  }
+  .presentation__title {
+    position: relative;
+    padding: 0px;
+    padding-left: 219px;
+    padding-right: 220px;
+    padding-top: 127px;
+    padding-bottom: 130px;
+    margin: 0px;
+    min-height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
   }
   .presentation__title::before {
     position: absolute;
@@ -2150,6 +2202,7 @@ input[type="search"]::placeholder {
     left: 0px;
     top: 83px;
     background-image: url(../img/icon-company.png);
+    background-size: inherit;
   }
   .presentation__description-inner {
     padding: 0 110px;
