@@ -2132,7 +2132,7 @@ input[type="search"]::placeholder {
   position: relative;
   padding: 0px;
   padding-left: 219px;
-  padding-right: 407px;
+  padding-right: 220px;
   padding-top: 127px;
   padding-bottom: 130px;
   margin: 0px;
@@ -5409,6 +5409,7 @@ input[type="search"]::placeholder {
 .test-info__header {
   max-width: 1060px;
   margin: 0 auto;
+  background-color: #313649;
   border-collapse: collapse;
 }
 .test-info__name--testing {
