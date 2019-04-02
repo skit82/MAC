@@ -242,14 +242,14 @@
 .left-arrow {
   position: absolute;
   left: -15px;
-  top: 46px;
+  top: 120px;
   z-index: 1;
   opacity: 0.5;
 }
 .right-arrow {
   position: absolute;
   right: -15px;
-  top: 46px;
+  top: 120px;
   z-index: 1;
   opacity: 0.5;
 }

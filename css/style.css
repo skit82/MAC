@@ -1805,6 +1805,7 @@ input[type="search"]::placeholder {
   padding-left: 5px;
   padding-right: 5px;
   margin: 0px;
+  margin-top: 30px;
   font-size: 13px;
   line-height: 20px;
   letter-spacing: 0.0em;
@@ -1818,8 +1819,10 @@ input[type="search"]::placeholder {
   content: "";
   width: 110px;
   height: 110px;
-  left: 20px;
-  top: -75px;
+  left: 110px;
+  top: -130px;
+  /*left: 20px;*/
+  /*top: -75px;*/
   background-image: url(../img/present_work.jpg);
   z-index: -1;
 }
@@ -1828,6 +1831,7 @@ input[type="search"]::placeholder {
   display: block;
   font-size: 100px;
   line-height: 100px;
+  text-align: center;
   color: #fff;
   z-index: 2;
 }
@@ -2054,6 +2058,9 @@ input[type="search"]::placeholder {
     padding-top: 70px;
     padding-bottom: 70px;
   }
+  .presentation__work-number {
+    text-align: left;
+  }
   .presentation__criteria-title {
     font-size: 20px;
     text-align: left;
@@ -2135,6 +2142,7 @@ input[type="search"]::placeholder {
     padding-left: 110px;
     padding-right: 0px;
     margin: 0px;
+    margin-top: 0px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.0em;
@@ -2916,15 +2924,17 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .patent__paper-list {
   padding: 0px;
   padding-left: 30px;
   margin: 0px;
+  margin-top: 25px;
   margin-bottom: 20px;
   list-style: none;
 }
@@ -2963,7 +2973,6 @@ input[type="search"]::placeholder {
   height: 40px;
   margin: 0 auto;
   margin-top: 38px;
-  margin-bottom: 30px;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -3054,6 +3063,9 @@ input[type="search"]::placeholder {
   }
   .patent__descr-text p {
     margin-bottom: 80px;
+  }
+  .patent__paper-list {
+    margin-top: 0px;  
   }
 }
 @media (min-width: 1080px) {
@@ -3247,12 +3259,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .notary__descr-tp {
   text-transform: uppercase;
@@ -3266,7 +3277,7 @@ input[type="search"]::placeholder {
 .notary__transfer-text {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 25px;
+  margin-top: 25px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -3358,6 +3369,8 @@ input[type="search"]::placeholder {
   }
   .notary__transfer-text {
     word-spacing: 5px;
+    margin-top: 0px;
+    margin-bottom: 25px;
   }
   .notary__transfer-text:last-child {
     margin-bottom: 0px;
@@ -3495,12 +3508,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .advisory__descr-item,
 .advisory__law-item {
@@ -3558,7 +3570,7 @@ input[type="search"]::placeholder {
 .advisory__law-text {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 45px;
+  margin-top: 25px;
   font-size: 13px;
   line-height: 24px;
   text-align: justify;
@@ -3606,6 +3618,10 @@ input[type="search"]::placeholder {
   }
 }
 @media (min-width: 1024px) {
+  .advisory__law-text {
+    margin-top: 0px;
+    margin-bottom: 45px;
+  }
   .advisory__descr-list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3807,12 +3823,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -3824,12 +3839,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .residence__descr-item,
 .residence__allow-item {
@@ -3888,7 +3902,7 @@ input[type="search"]::placeholder {
 .residence__allow-text {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 28px;
+  margin-top: 28px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -3965,6 +3979,10 @@ input[type="search"]::placeholder {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.010em;
+  }
+  .residence__allow-text {
+    margin-top: 0px;
+    margin-bottom: 28px;
   }
   .residence__allow-text:last-child {
     margin-bottom: 0px;
@@ -4086,12 +4104,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .permit__descr-item,
 .permit__issues-item {
@@ -4163,8 +4180,8 @@ input[type="search"]::placeholder {
   font-weight: 600;
   font-style: italic;
 }
-.permit__issues-text:last-child {
-  margin-bottom: 25px;
+.permit__issues-text:first-child {
+  margin-top: 25px;
 }
 .permit__issues-img {
   display: block;
@@ -4241,8 +4258,8 @@ input[type="search"]::placeholder {
     line-height: 30px;
     letter-spacing: 0.010em;
   }
-  .permit__issues-text:last-child {
-    margin-bottom: 0px;
+  .permit__issues-text:first-child {
+    margin-top: 0px;
   }
 }
 @media (min-width: 1080px) {
@@ -4368,12 +4385,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .national__descr-item,
 .national__notion-item {
@@ -4432,7 +4448,7 @@ input[type="search"]::placeholder {
 .national__notion-text {
   padding: 0px;
   margin: 0px;
-  margin-bottom: 25px;
+  margin-top: 25px;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -4509,7 +4525,8 @@ input[type="search"]::placeholder {
     text-align: justify;
   }
   .national__notion-text {
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 1080px) {
@@ -4625,12 +4642,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .state-program__descr-item,
 .state-programm__decision-item {
@@ -4696,8 +4712,8 @@ input[type="search"]::placeholder {
   text-align: justify;
   word-spacing: -1px;
 }
-.state-programm__decision-picture {
-  padding-top: 60px;
+.state-programm__decision-text:first-child {
+  margin-top: 25px;
 }
 .state-programm__decision-img {
   display: block;
@@ -4746,6 +4762,9 @@ input[type="search"]::placeholder {
     width: 475px;
     height: 350px;
   }
+  .state-programm__decision-picture {
+    padding-top: 60px;
+  }
   .state-program__descr-picture img {
     width: 320px;
     padding-top: 50px;
@@ -4767,6 +4786,9 @@ input[type="search"]::placeholder {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .state-programm__decision-text:first-child {
+    margin-top: 0px;
   }
 }
 @media (min-width: 1080px) {
@@ -4894,12 +4916,11 @@ input[type="search"]::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .insurance__descr-item {
   max-width: 516px;
@@ -5010,6 +5031,7 @@ input[type="search"]::placeholder {
 .insurance__assist-text:first-child {
   font-size: 16px;
   font-weight: 600;
+  margin-top: 25px;
 }
 .insurance__assist-text:last-child {
   margin-bottom: 0px;
@@ -5059,9 +5081,6 @@ input[type="search"]::placeholder {
   color: #3eb5f1;
   text-transform: uppercase;
 }
-.insurance__assist-picture {
-  padding-top: 48px;
-}
 .insurance__assist-img {
   display: block;
   -webkit-box-shadow: 0px 0px 10px rgb(0, 0, 0);
@@ -5105,6 +5124,12 @@ input[type="search"]::placeholder {
   .insurance__assist-item {
     max-width: 475px;
     margin: 0px;
+  }
+  .insurance__assist-text:first-child {
+    margin-top: 0px;
+  }
+  .insurance__assist-picture {
+    padding-top: 48px;
   }
   .insurance__title {
     padding-left: 170px;
