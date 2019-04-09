@@ -122,8 +122,8 @@ $(document).ready(function() {
     dots: true,
     infinite: true,
     speed: 300,
-    prevArrow: '<img class="left-arrow" src="img/left-arrow.png">',
-    nextArrow: '<img class="right-arrow" src="img/right-arrow.png">',
+    prevArrow: '<img class="left-arrow" src="img/left-icon.png">',
+    nextArrow: '<img class="right-arrow" src="img/right-icon.png">',
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [

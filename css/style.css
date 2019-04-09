@@ -6015,7 +6015,28 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-.contact-form__input::-webkit-input-placeholder {
+input[type="text"] {
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #313649;
+}
+input[type="text"]::-ms-input-placeholder {
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #313649;
+}
+input[type="text"]::-ms-input-placeholder {
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #313649;
+}
+input[type="text"]::placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
@@ -6023,7 +6044,14 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-.contact-form__input::-ms-input-placeholder {
+input[type="email"] {
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #313649;
+}
+input[type="email"]::-ms-input-placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
@@ -6031,7 +6059,7 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-.contact-form__input::-ms-input-placeholder {
+input[type="email"]::-ms-input-placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
@@ -6039,7 +6067,7 @@ input[type="search"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-.contact-form__input::placeholder {
+input[type="email"]::placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
