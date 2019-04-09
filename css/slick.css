@@ -257,3 +257,23 @@
 .slick-slider:hover .right-arrow {
   opacity: 1;
 }
+.arrow-left {
+  position: absolute;
+  width: 40px;
+  left: -15px;
+  top: 55px;
+  z-index: 1;
+  opacity: 0.5;
+}
+.arrow-right {
+  position: absolute;
+  width: 40px;
+  right: -15px;
+  top: 55px;
+  z-index: 1;
+  opacity: 0.5;
+}
+.slick-slider:hover .arrow-left,
+.slick-slider:hover .arrow-right {
+  opacity: 1;
+}
