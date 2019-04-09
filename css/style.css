@@ -6016,25 +6016,33 @@ input[type="search"]::placeholder {
   color: #313649;
 }
 .contact-form__input::-webkit-input-placeholder {
+  -webkit-appearance: none;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
 }
 .contact-form__input::-ms-input-placeholder {
+  -webkit-appearance: none;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
 }
 .contact-form__input::-ms-input-placeholder {
+  -webkit-appearance: none;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
 }
 .contact-form__input::placeholder {
+  -webkit-appearance: none;
   font-size: 16px;
+  line-height: 18px;
   font-weight: 400;
   opacity: 0.5;
   color: #313649;
@@ -6656,6 +6664,17 @@ input[type="search"]::placeholder {
   }
 }
 @media (min-width: 1080px) {
+  .other__contact-link {
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+  }
+  .other__contact-link:hover {
+    /* margin: 0 auto; */
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
   .other__name-inner {
     padding: 0px 110px;
   }
