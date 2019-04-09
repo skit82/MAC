@@ -5988,7 +5988,7 @@ input[type="search"]::placeholder {
   -webkit-appearance: none;
   min-height: 148px;
   font-size: 16px;
-  padding-left: 15px;
+  padding-left: 14px;
   border: 0px;
 }
 .contact-form__textarea::-webkit-input-placeholder {

@@ -241,15 +241,17 @@
 }
 .left-arrow {
   position: absolute;
+  width: 40px;
   left: -15px;
-  top: 120px;
+  top: 15px;
   z-index: 1;
   opacity: 0.5;
 }
 .right-arrow {
   position: absolute;
+  width: 40px;
   right: -15px;
-  top: 120px;
+  top: 15px;
   z-index: 1;
   opacity: 0.5;
 }
