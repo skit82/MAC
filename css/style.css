@@ -6045,22 +6045,14 @@ input[type="text"]::placeholder {
   opacity: 0.5;
   color: #313649;
 }
-input[type="email"] {
+input[type="tel"] {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: #313649;
 }
-input[type="email"]::-ms-input-placeholder {
-  -webkit-appearance: none;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
-  opacity: 0.5;
-  color: #313649;
-}
-input[type="email"]::-ms-input-placeholder {
+input[type="tel"]::-ms-input-placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
@@ -6068,7 +6060,15 @@ input[type="email"]::-ms-input-placeholder {
   opacity: 0.5;
   color: #313649;
 }
-input[type="email"]::placeholder {
+input[type="tel"]::-ms-input-placeholder {
+  -webkit-appearance: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  opacity: 0.5;
+  color: #313649;
+}
+input[type="tel"]::placeholder {
   -webkit-appearance: none;
   font-size: 16px;
   line-height: 18px;
@@ -6113,6 +6113,9 @@ input[type="email"]::placeholder {
   background-image: -ms-linear-gradient( 90deg, rgb(225,0,25) 0%, rgb(196,3,15) 35%, rgb(167,5,5) 61%, rgb(197,100,100) 77%, rgb(227,194,194) 100%);
 }
 @media (min-width: 768px) {
+  .contact-form__textarea {
+    padding-left: 17px;
+  }
   .contact__descr-name {
     font-size: 24px;
     margin-bottom: 40px;
